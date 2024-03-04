@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 import axios from "axios"
 
 
-const BASE_URL = `http://localhost:8000/api`
+const BASE_URL = `ecommerse-backend-production.up.railway.app/api`
 
 
 export const getProducts = createAsyncThunk("products/getProducts", async (Limit) => {
