@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Play', sans-serif;   
+}
+  
+  .cardData{
+    justify-content: space-between;
+    
+  }
+  .container{
+    margin: 20px;
+  }
+  .card {
+  
+    width: 300px;
+    height: auto;
+     cursor: pointer;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    svg {
+      width: 20px;
+      height: 20px;
+     }
+
+     .img{
+      border-radius: 5px;
+        width: 100%;
+        height: 100%;
+     }
+   }
+   
+   .cardImg {
+    background-color: #ed2749;
+    width: 263px;
+    height: 300px;
+    border-radius: .5rem;
+    transition: .3s ease;
+    
+   }
+   
+   .cardInfo {
+    padding-top: 10%;
+   }
+   
+   
+   
+   .cardFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .textTitle {
+    font-weight: 500;
+    font-size: 0.7em;
+    line-height: 1.5;
+   }
+   
+   .textBody {
+    font-size: .9em;
+    padding-bottom: 10px;
+   }
+   
+   /*Button*/
+   .cardButton {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .cardImg:hover {
+
+    box-shadow: rgba(245, 70, 100, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .cardButton:hover {
+    border: 1px solid #ed2749;
+    background-color: #ed2749;
+   }
+   
+   .about{
+    i{
+      color: #ed2749;
+     
+    }
+   }
+
+  .viewMore{
+    .more {
+      background: #ed2749;
+      color: white;
+      font-family: inherit;
+      padding: 0.35em;
+      padding-left: 1.2em;
+      font-size: 17px;
+      font-weight: 500;
+      border-radius: 0.9em;
+      border: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0 0 1.6em -0.6em #714da6;
+      overflow: hidden;
+      position: relative;
+      height: 2.8em;
+      padding-right: 3.3em;
+    }
+    
+    .more .icon {
+      background: white;
+      margin-left: 1em;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.2em;
+      width: 2.2em;
+      border-radius: 0.7em;
+      box-shadow: 0.1em 0.1em 0.6em 0.2em #ed2749;;
+      right: 0.3em;
+      transition: all 0.3s;
+    }
+    
+    .more:hover .icon {
+      width: calc(100% - 0.6em);
+    }
+    
+    .more .icon svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: #ed2749;
+    }
+    
+    .more:hover .icon svg {
+      transform: translateX(0.1em);
+    }
+    
+    .more:active .icon {
+      transform: scale(0.95);
+    }
+
+    .productLink{
+      text-decoration: none;
+    }
+
+    .loaderCss{
+      margin: auto;
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .card {
+  margin: 0px;
+
+      width: 175px;
+      
+      max-height: 335px;
+       cursor: pointer;
+      padding: .8em;
+      background: #f5f5f5;
+      position: relative;
+      overflow: visible;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      svg {
+        width: 15px;
+        height: 15px;
+       }
+  
+       .img{
+        border-radius: 5px;
+          width: 100%;
+          height: 100%;
+       }
+     }
+     
+     .cardImg {
+      background-color: #ed2749;
+      width: 150px;
+      height: 200px;
+      border-radius: .5rem;
+      transition: .3s ease;
+      
+     }
+     
+     .cardInfo {
+      padding-top: 8%;
+     }
+     
+     
+     
+     .cardFooter {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      border-top: 1px solid #ddd;
+     }
+     
+     /*Text*/
+     .textTitle {
+      font-weight: 900;
+      font-size: 0.7em;
+      line-height: 1.5;
+     }
+     
+     .textBody {
+      font-size: .5em;
+      padding-bottom: 10px;
+     }
+     
+     /*Button*/
+     .cardButton {
+      border: 1px solid #252525;
+      display: flex;
+      padding: .3em;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: .3s ease-in-out;
+     }
+   }

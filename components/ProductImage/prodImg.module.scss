@@ -1,0 +1,42 @@
+.container{
+    width: 430px;
+    padding: 5px;
+}
+.mainImg{
+    max-width: 420px;
+    height: 550px;
+   border-radius: 15px;
+    cursor: pointer;
+}
+.smImages{
+    cursor: pointer;
+    width: 91px;
+    height: 91px;
+    margin: auto;
+}
+.smImgContainer{
+    padding: 0px 9px;
+      width: 300px;
+  }
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 350px;
+        padding: 10px 3px;
+    }
+    .mainImg{
+       width: 343px;
+        height: 550px;
+       border-radius: 15px;
+        cursor: pointer;
+    }
+    .smImages{
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+        margin: auto;
+    }
+    .smImgContainer{
+      padding: 0px 9px;
+        width: 300px;
+    }
+}

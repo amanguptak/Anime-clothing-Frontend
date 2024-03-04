@@ -1,0 +1,17 @@
+.checkout{
+  background: url("https://wallpapercave.com/wp/wp12526914.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: -32px;
+  padding: 15px 0px 15px 0px;
+}
+@media only screen and (max-width: 600px) {
+ .checkout{
+
+  margin-bottom: -32px;
+  padding: 15px 0px 15px 0px;
+ }
+}
+

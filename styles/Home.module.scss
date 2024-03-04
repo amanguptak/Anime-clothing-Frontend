@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+// https://wallpapercave.com/wp/wp10897345.jpg
+
+
+.img3{
+    margin-top: 30px;
+    background-image: url("https://images7.alphacoders.com/102/1020289.png");
+    object-fit: cover;
+    height: 655px;
+    width: auto;
+    background-size: cover;
+  h3{
+    font-size: 100px;
+    color: #ededed;
+    
+    padding: 14vh 0px 0px 9vh;
+    font-family: "Play", sans-serif;
+    font-style: italic;
+  }
+  p{
+    color: #ededed;
+    padding: 10vh;
+    font-size: 30px;
+    font-family: "Play", sans-serif;
+    width: 65%;
+  }
+  .naruto{
+    width: 51px;
+    height: auto;
+    margin: 27px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .img3{
+       
+        height: 25vh;
+    
+      h3{
+        font-size: 34px;
+        padding: 5vh 0px 0px 5vh;
+       
+       
+      }
+      p{
+        color: #ededed;
+        padding: 1vh;
+        font-size: 12px;
+        font-family: "Play", sans-serif;
+        width: 70%;
+      }
+      .naruto{
+        width: 22px;
+        height: auto;
+        margin: 7px;
+      }
+    }
+
+}

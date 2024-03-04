@@ -1,0 +1,27 @@
+
+.backBtn{
+bottom: 54px;
+}
+.info{
+  // background-color: #ed2749;
+  // border: 3px solid #ecd448;
+}
+.cancelBtn{
+border: none;
+background: white;
+color: red;
+margin-bottom: 3px;
+}
+@media only screen and (max-width: 600px) {
+     .step{
+        text-align: center;
+    /* margin-right: 30px; */
+    display: flex;
+    justify-content: space-around;
+    }
+    .backBtn{
+      bottom: 58px;
+      left: 14px;
+      }
+
+  }

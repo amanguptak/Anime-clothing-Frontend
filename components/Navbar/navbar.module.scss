@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8e8e8;
+    background-color: #ef3252;
+    
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 2px solid #ed2749;;
+    border-radius: 50%;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15),
+      2px 2px 2px rgba(0, 0, 0, 0.1),
+      -3px -3px 2px rgba(255, 255, 255, 0.05),
+      -2px -2px 1px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button .span {
+    position: relative;
+    z-index: 2;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    background-color: #e8e8e8;
+    width: 150%;
+    height: 150%;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(-100%, 100%) rotate(45deg);
+    border-radius: 15px;
+  }
+  
+  .button:hover::before {
+    animation: shakeBack 0.6s forwards 0.6s;
+  }
+  
+  .button:hover .span {
+    scale: 1.2;
+  }
+  
+  .button:hover {
+    box-shadow: none;
+  }
+  
+  .button:active {
+    scale: 0.95;
+  }
+  
+  @keyframes shakeBack {
+    0% {
+      transform: translate(-100%, 100%) rotate(45deg);
+    }
+  
+    50% {
+      transform: translate(15%, -15%) rotate(45deg);
+    }
+  
+    100% {
+      transform: translate(-10%, 10%) rotate(45deg);
+    }
+  }
+  
+  .button2,
+.button2::after {
+    font-family: 'Balsamiq Sans';
+ 
+ background: linear-gradient(45deg, transparent 5%, #ED2647 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+ margin-right: 10px;
+}
+
+.button2::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+.button2:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+.cartIcon{
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .SearchD{
+    display: none;
+  } 
+}
+
+
+.accountLink{
+  text-decoration: none;
+  color: #ef3252;;
+}

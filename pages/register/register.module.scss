@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+.font{
+    font-family: 'Balsamiq Sans';
+    background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/09/Bleach-Thousand-Year-Blood-War-Feature.jpg");
+    background-size:cover;
+    // background: linear-gradient(to right, #0f0c29, #ED2647, #24243e);
+}
+/* style ={{backgroundImage: "url(https://images3.alphacoders.com/131/1314003.png)",backgroundSize:"cover"}} */
+
+.passwordBox{
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+ 
+}
+// .passwordBox:focus{
+//   background-color: red;
+// }
+.passwordS{
+  border: none;
+}
+
+.title {
+    color: #f14461;
+    font-family: 'Balsamiq Sans';
+    font-size: 36px;
+    font-weight: 600;
+   
+   text-align: center;
+  }
+  
+  .subtitle {
+    color: #d0c0c0;
+    font-family: 'Balsamiq Sans';
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.button {
+    display: flex;
+    align-items: center;
+    font-family: 'Balsamiq Sans';
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #ed415e, #302b63, #ED2647);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  .button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  .button:hover span {
+    transform: translateX(7px);
+  }

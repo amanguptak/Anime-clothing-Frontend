@@ -1,0 +1,48 @@
+.Breadcrumb{
+    background-color: #2C3F50;
+    color: #ed2749;
+    font-family: "Balsamiq Sans";
+  }
+
+.loaderCss{
+  margin-left: 20px;
+ 
+}
+  .cartBtn{
+    background-color: #212529;
+    color: #ed2749;
+    cursor: pointer;
+  }
+
+  .button {
+    margin: 13px;
+    width: 30%;
+    height: 59%;
+    background-image: linear-gradient(rgb(241, 65,95,1),rgb(241, 65,95,1));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+  }
+  
+  .cartIcon {
+    width: 14px;
+    height: fit-content;
+  }
+  
+  .cartIcon path {
+    fill: white;
+  }
+  
+  .button:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(241, 65,95,1) ;
+    padding-bottom: 1px;
+  }

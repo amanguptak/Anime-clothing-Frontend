@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+.banner {
+  background-color: #ed2648;
+
+  height: 88vmin;
+
+  // height: 56vmin;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 98vmin;
+  background-image: url("https://static1.squarespace.com/static/5fe4caeadae61a2f19719512/5fe5c3a9d85eb525301180ed/6016f6cdf444774bdfcf9aec/1612122243665/1.jpg?format=1500w");
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  background-size: cover;
+  clip-path: polygon(100% 29%, 0 100%, 100% 100%);
+}
+
+.slogan {
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 15vh;
+  h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  p {
+    text-align: justify;
+  }
+  span {
+    font-family: "Balsamiq Sans";
+  }
+}
+
+.banner1 {
+  background-image: url("https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1680243163.webp");
+  background-size: cover;
+
+  height: 88vmin;
+}
+
+.slogan1 {
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 15vh;
+  h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  p {
+    text-align: justify;
+  }
+  span {
+    font-family: "Balsamiq Sans";
+  }
+}
+
+.banner2 {
+  background-image: url("https://cdn.marvel.com/u/prod/marvel/images/OpenGraph-TW-1200x630.jpg");
+  background-size: cover;
+
+  height: 88vmin;
+}
+.slogan2 {
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 15vh;
+  h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  p {
+    text-align: justify;
+  }
+  span {
+    font-family: "Balsamiq Sans";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slogan {
+    padding: 4vh;
+  }
+
+  .slogan1 {
+    padding: 4vh;
+  }
+  .slogan2 {
+    padding: 4vh;
+  }
+  .banner::after {
+    content: "";
+    width: 100vw;
+    height: 102vmin;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(102% 69%, 27% 106%, 100% 105%);
+  }
+}
+
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #f54664;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
