@@ -31,8 +31,8 @@ export default function PaymentForm() {
   const handleCheckout = async (price)=>{
     // e.preventDefault();
     const config = { headers: { "Content-Type": "application/json" } };
-     const res = await axios.post("ecommerse-backend-production.up.railway.app/api/checkout",{amount:price},{withCredentials:true},config)
-     const {data:{key}} = await axios.get("ecommerse-backend-production.up.railway.app/api/getPay",{withCredentials:true},config)
+     const res = await axios.post("https://ecommerse-backend-production.up.railway.app/api/checkout",{amount:price},{withCredentials:true},config)
+     const {data:{key}} = await axios.get("https://ecommerse-backend-production.up.railway.app/api/getPay",{withCredentials:true},config)
      setOrder(res?.data?.order)
      console.log("ordercheck",order,key)
      var options = {
@@ -43,7 +43,7 @@ export default function PaymentForm() {
       description: "buying products ",
       image: "https://ibb.co/sQHnXQZ",
       order_id: order?.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-      callback_url: "ecommerse-backend-production.up.railway.app/api/paymentverification",
+      callback_url: "https://ecommerse-backend-production.up.railway.app/api/paymentverification",
       prefill: {
           name: userProfile?.name,
         email: userProfile?.email,

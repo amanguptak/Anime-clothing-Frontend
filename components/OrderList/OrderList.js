@@ -38,7 +38,7 @@ const OrderList = () => {
   //    },[])
   const orderList = () => {
     axios
-      .get(" ecommerse-backend-production.up.railway.app/api/myOrders", { withCredentials: true })
+      .get(" https://ecommerse-backend-production.up.railway.app/api/myOrders", { withCredentials: true })
       .then((res) => {
        
         setmyOrderData(res?.data?.orders);

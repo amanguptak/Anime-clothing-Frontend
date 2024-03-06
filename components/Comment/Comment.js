@@ -26,7 +26,7 @@ const [formData, setFormData] = React.useState(initialValues);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put("ecommerse-backend-production.up.railway.app/api/review",{
+    axios.put("https://ecommerse-backend-production.up.railway.app/api/review",{
       rating: formData.star,
       comment: formData.message,
       productId:productId

@@ -20,7 +20,7 @@ module.exports = nextConfig
 //   return [
 //     {
 //       source: 'api/:path*',
-//       destination: 'ecommerse-backend-production.up.railway.app/api/:path*', // Replace with your API server
+//       destination: 'https://ecommerse-backend-production.up.railway.app/api/:path*', // Replace with your API server
 //     },
 //   ];
 // },

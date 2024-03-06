@@ -49,7 +49,7 @@ const PaymentConfirm = () => {
       totalPrice:totalPrice
 
     }
-    axios.post("ecommerse-backend-production.up.railway.app/api/order",data,{withCredentials:true,}).then((res)=>{
+    axios.post("https://ecommerse-backend-production.up.railway.app/api/order",data,{withCredentials:true,}).then((res)=>{
      console.log(res.data,"checking")
      if(res.data.success){
       toast.success("Redirecting to OrderPage")
