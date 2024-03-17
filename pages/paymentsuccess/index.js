@@ -31,14 +31,16 @@ const PaymentConfirm = () => {
   }
   const orderCreate = ()=>{
     const shippingInfo = {
-      address:address.address,
-      locality:address.address,
-      state:address.state,
-      country:address.Country,
-      pinCode:address.zip,
+      address:"123, Main Street, City Name, State Name",
+      locality:"Delhi",
+      state:"Delhi",
+      country:"India",
+      pinCode:"277202",
       phoneNo:9876543210
     }
+    console.log("Address ship",address)
 
+   
     const data = {
       shippingInfo:shippingInfo,
       orderItems:orderdProducts,
